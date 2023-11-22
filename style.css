@@ -1,88 +1,105 @@
-*{
-    font-family: 'Lora', serif;
-    font-family: 'Poppins', sans-serif;
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-header{
-  margin-top: 47px;
-  margin-left: 42px;
- }
-
-
-.link-header{
-    width: 87px;
-    height: 20px;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 21px;
-    letter-spacing: 0.875px;
-    cursor: pointer;
-    margin-right: 32px;
+    font-family: 'Mukta', sans-serif;
 }
 
-.button-header{
-   border-radius: 1px; 
-   border: none;
-   background-color: #4CB538;
-   width: 124px;
-   height: 51px;
-   color: #FFFFFF;
-   font-weight: 500px;
-   font-size: 16px;
-   line-height: 24px;
-   cursor: pointer;
-}
-   
 
-.img-logo{
-
-    width: 595.18px;
-    height: 500px;
-    margin-left: 110px;
-    margin-top: 120px;
-    display: inline-block;
+body {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
-section{
-    display: inline-block;
-    margin-left: 85px;
+.logo-mario {
+    width: 400px;
 }
 
-h1{
-    font-size: 62px;
-    font-weight: 700;
-    color:#161A49;
-    line-height: 82px;
-    width: 582px;
-    height: 164px;
-    letter-spacing: 0.596154px;
-
+.imagem-mario-luigi {
+    height: 600px;
 }
 
-p{
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 33px;
-    color:#4B505A;
-    width: 493px;
-    margin-top: 47px;
-    margin-bottom: 55px;
-    letter-spacing: 0.5px;
+.caixa-principal {
+    width: 40%;
 }
 
-.button-main{
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 27px;
-    color: #6FBF44;
-    background: transparent;
+.caixa-video-mario {
+    position: fixed;
+    top: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+}
+video {
+    position: fixed;
+    top: 0;
+    min-height: 100%;
+    min-width: 100%;
+}
+
+.mascara-video {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background: linear-gradient(109deg, rgba(10, 12, 16, 0.99) 15%, rgba(10, 12, 16, 0.7) 50%, rgba(10, 12, 16, 0.99) 85%);
+}
+
+p {
+    color: white;
+    margin-top: 10px;
+    font-size: 24px;
+}
+
+button {
+    height: 40px;
+    width: 200px;
+    background: #C51111;
     border: none;
+    border-radius: 4px;
+    color: #fff;
+    margin-top: 20px;
     cursor: pointer;
-    width: 112px;
-    height: 27px;
-    letter-spacing: 1px;
+}
 
+.fale-conosco {
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 10px;
+    gap: 20px;
+    position: fixed;
+    left: -320px;
+    transition: left 1s linear;
+    z-index: 4;
+}
 
+input {
+    height: 40px;
+    border-radius: 3px;
+    border: 1px solid gray;
+    padding-left: 10px;
+    outline-color: chartreuse;
+}
+
+textarea {
+    height: 90px;
+    width: 300px;
+    border-radius: 3px;
+    border: 1px solid gray;
+    padding: 10px;
+    outline-color: chartreuse;
+}
+
+.mascara-form {
+    visibility: hidden;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    z-index: 3;
+    background: linear-gradient(109deg, rgba(10, 12, 16, 0.99) 15%, rgba(10, 12, 16, 0.7) 50%, rgba(10, 12, 16, 0.99) 85%);
 }
